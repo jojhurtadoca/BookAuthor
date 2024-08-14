@@ -1,0 +1,17 @@
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\obj\Debug\net8.0\BookAuthor.Data.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\obj\Debug\net8.0\BookAuthor.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\obj\Debug\net8.0\BookAuthor.Data.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\obj\Debug\net8.0\BookAuthor.Data.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\obj\Debug\net8.0\BookAuthor.Data.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\bin\Debug\net8.0\BookAuthor.Data.deps.json
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\bin\Debug\net8.0\BookAuthor.Data.runtimeconfig.json
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\bin\Debug\net8.0\BookAuthor.Data.dll
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\bin\Debug\net8.0\BookAuthor.Data.pdb
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\bin\Debug\net8.0\BookAuthor.Models.dll
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\bin\Debug\net8.0\BookAuthor.Models.pdb
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\obj\Debug\net8.0\BookAuth.FDC317CF.Up2Date
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\obj\Debug\net8.0\BookAuthor.Data.dll
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\obj\Debug\net8.0\refint\BookAuthor.Data.dll
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\obj\Debug\net8.0\BookAuthor.Data.pdb
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\obj\Debug\net8.0\BookAuthor.Data.genruntimeconfig.cache
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.data\obj\Debug\net8.0\ref\BookAuthor.Data.dll

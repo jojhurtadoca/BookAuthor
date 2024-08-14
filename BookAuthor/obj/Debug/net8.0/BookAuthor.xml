@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BookAuthor</name>
+    </assembly>
+    <members>
+        <member name="M:BookAuthor.Controllers.BookController.CreateBook(BookAuthor.Models.Dto.CreateBookDTO)">
+            <summary>
+            Creates a book
+            </summary>
+            <returns>Book created.</returns>
+        </member>
+        <member name="M:BookAuthor.Controllers.BookController.GetBook(System.Int32)">
+            <summary>
+            Get book by id
+            </summary>
+            <returns>Book by id.</returns>
+        </member>
+        <member name="M:BookAuthor.Controllers.BookController.UpdateBook(System.Int32,BookAuthor.Models.Dto.UpdateBookDTO)">
+            <summary>
+            Updates book by id and DTO
+            </summary>
+            <returns>Json Result.</returns>
+        </member>
+        <member name="M:BookAuthor.Controllers.BookController.DeleteBook(System.Int32)">
+            <summary>
+            Deletes a book by id
+            </summary>
+            <returns>Json Result.</returns>
+        </member>
+        <member name="M:BookAuthor.Controllers.BookController.GetBoooks(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Gets list of books
+            </summary>
+            <returns>List of books.</returns>
+        </member>
+        <member name="M:BookAuthor.Controllers.BookController.GetBoooksByAuthor(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Filters books by author
+            </summary>
+            <returns>The list of the books filtered by Author.</returns>
+        </member>
+        <member name="M:BookAuthor.Controllers.BookController.GetBoooksByGender(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Filters books by Gender
+            </summary>
+            <returns>The list of the books filtered by Gender.</returns>
+        </member>
+        <member name="M:BookAuthor.Controllers.BookController.GetTheMostExpensiveBook">
+            <summary>
+            Gets the most expensive book
+            </summary>
+            <returns>The most expensive book.</returns>
+        </member>
+        <member name="M:BookAuthor.Controllers.BookController.GetTheCheapestBook">
+            <summary>
+            Gets the cheapest book
+            </summary>
+            <returns>The cheapest book.</returns>
+        </member>
+    </members>
+</doc>

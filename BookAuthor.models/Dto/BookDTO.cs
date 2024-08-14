@@ -6,7 +6,7 @@ namespace BookAuthor.Models.Dto
 {
     public class BookDTO
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Title { get; set; }
 
         public GenderDTO Gender { get; set; }

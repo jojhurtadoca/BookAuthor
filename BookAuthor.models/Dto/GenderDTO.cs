@@ -1,4 +1,5 @@
-﻿namespace BookAuthor.Models.Dto
+﻿
+namespace BookAuthor.Models.Dto
 {
     public class GenderDTO
     {

@@ -10,3 +10,4 @@ C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.models\obj\Debug\net8.0\refi
 C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.models\obj\Debug\net8.0\BookAuthor.Models.pdb
 C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.models\obj\Debug\net8.0\ref\BookAuthor.Models.dll
 C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.models\obj\Debug\net8.0\BookAuthor.Models.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.models\obj\Debug\net8.0\BookAuthor.Models.sourcelink.json

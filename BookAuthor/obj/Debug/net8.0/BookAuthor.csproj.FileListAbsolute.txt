@@ -154,3 +154,4 @@ C:\Users\Usuario\source\repos\BookAuthor\BookAuthor\obj\Debug\net8.0\ref\BookAut
 C:\Users\Usuario\source\repos\BookAuthor\BookAuthor\obj\Debug\net8.0\BookAuthor.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Usuario\source\repos\BookAuthor\BookAuthor\bin\Debug\net8.0\BookAuthor.xml
 C:\Users\Usuario\source\repos\BookAuthor\BookAuthor\obj\Debug\net8.0\BookAuthor.xml
+C:\Users\Usuario\source\repos\BookAuthor\BookAuthor\obj\Debug\net8.0\BookAuthor.sourcelink.json

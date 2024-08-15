@@ -1,6 +1,7 @@
 ﻿using BookAuthor.Data.Data.Repository.IRepository;
 using BookManagement.data.Data;
 using BookManagement.data.Data.Repository;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Models.models;
 
@@ -15,6 +16,14 @@ namespace BookAuthor.Data.Data.Repository
         {
             _dbContext = dbContext;
             _logger = logger;
+        }
+
+        public async Task<List<Book>> GetBooksWithDetails()
+        {
+            return _dbContext.Set<Book>()
+                .Include(g => g.Gender)
+                .Include(g => g.Author)
+                .ToList();
         }
     }
 }

@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BookAuthor.models\BookAuthor.Models.csproj" />
     <ProjectReference Include="..\BookAuthor.service\BookAuthor.Service.csproj" />
     <ProjectReference Include="..\BookAuthor\BookAuthor.csproj" />
   </ItemGroup>

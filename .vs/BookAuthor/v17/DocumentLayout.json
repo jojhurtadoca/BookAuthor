@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{817062A9-A88F-4F2C-82A6-885FD5961790}|BookAuthor.Test\\BookAuthor.Test.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor.test\\controller\\bookcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{817062A9-A88F-4F2C-82A6-885FD5961790}|BookAuthor.Test\\BookAuthor.Test.csproj|solutionrelative:bookauthor.test\\controller\\bookcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB62265F-275A-4D0D-A151-1F537AB94E94}|BookAuthor.service\\BookAuthor.Service.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor.service\\service\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB62265F-275A-4D0D-A151-1F537AB94E94}|BookAuthor.service\\BookAuthor.Service.csproj|solutionrelative:bookauthor.service\\service\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor.data\\data\\repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|solutionrelative:bookauthor.data\\data\\repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor.data\\data\\repository\\irepository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|solutionrelative:bookauthor.data\\data\\repository\\irepository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A70514B-A5E8-46AF-8258-620E1528420F}|BookAuthor\\BookAuthor.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A70514B-A5E8-46AF-8258-620E1528420F}|BookAuthor\\BookAuthor.csproj|solutionrelative:bookauthor\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{817062A9-A88F-4F2C-82A6-885FD5961790}|BookAuthor.Test\\BookAuthor.Test.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor.test\\controller\\bookcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{817062A9-A88F-4F2C-82A6-885FD5961790}|BookAuthor.Test\\BookAuthor.Test.csproj|solutionrelative:bookauthor.test\\controller\\bookcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F58FCE49-D114-448A-967B-0AC53C69E714}|BookAuthor.models\\BookAuthor.Models.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor.models\\dto\\createbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{F58FCE49-D114-448A-967B-0AC53C69E714}|BookAuthor.models\\BookAuthor.Models.csproj|solutionrelative:bookauthor.models\\config\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB62265F-275A-4D0D-A151-1F537AB94E94}|BookAuthor.service\\BookAuthor.Service.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor.service\\service\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB62265F-275A-4D0D-A151-1F537AB94E94}|BookAuthor.service\\BookAuthor.Service.csproj|solutionrelative:bookauthor.service\\service\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor.data\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|solutionrelative:bookauthor.data\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,20 +59,8 @@
       "RelativeMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|solutionrelative:bookauthor.data\\data\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor.data\\data\\repository\\genderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|solutionrelative:bookauthor.data\\data\\repository\\genderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor.data\\data\\repository\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|solutionrelative:bookauthor.data\\data\\repository\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor.data\\data\\repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|solutionrelative:bookauthor.data\\data\\repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor.data\\data\\repository\\irepository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|solutionrelative:bookauthor.data\\data\\repository\\irepository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4116CE9-6882-4A69-9E56-A7AEE273AB0D}|BookAuthor.data\\BookAuthor.Data.csproj|c:\\users\\usuario\\source\\repos\\bookauthor\\bookauthor.data\\migrations\\20240813215453_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,46 +122,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateBookDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\Dto\\CreateBookDTO.cs",
-              "RelativeDocumentMoniker": "BookAuthor.models\\Dto\\CreateBookDTO.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\Dto\\CreateBookDTO.cs",
-              "RelativeToolTip": "BookAuthor.models\\Dto\\CreateBookDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T18:44:34.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "BookControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.Test\\Controller\\BookControllerTest.cs",
               "RelativeDocumentMoniker": "BookAuthor.Test\\Controller\\BookControllerTest.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.Test\\Controller\\BookControllerTest.cs",
               "RelativeToolTip": "BookAuthor.Test\\Controller\\BookControllerTest.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAgwDkAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIcAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-14T15:10:30.317Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "BookAuthor\\Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor\\Controllers\\BookController.cs",
               "RelativeToolTip": "BookAuthor\\Controllers\\BookController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAawCgAAAAUAAAA",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAcwM0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T17:33:25.042Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "UnitOfWorkBook.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\Data\\Repository\\UnitOfWorkBook.cs",
               "RelativeDocumentMoniker": "BookAuthor.data\\Data\\Repository\\UnitOfWorkBook.cs",
@@ -173,12 +156,11 @@
               "RelativeToolTip": "BookAuthor.data\\Data\\Repository\\UnitOfWorkBook.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAjwA8AAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T14:32:23.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T14:32:23.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor\\Program.cs",
               "RelativeDocumentMoniker": "BookAuthor\\Program.cs",
@@ -186,12 +168,11 @@
               "RelativeToolTip": "BookAuthor\\Program.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAAABkAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T17:33:40.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T17:33:40.094Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "BookAuthor.data\\Data\\ApplicationDbContext.cs",
@@ -199,12 +180,11 @@
               "RelativeToolTip": "BookAuthor.data\\Data\\ApplicationDbContext.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAywBgAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T14:04:38.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T14:04:38.654Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "BookDTO.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\Dto\\BookDTO.cs",
               "RelativeDocumentMoniker": "BookAuthor.models\\Dto\\BookDTO.cs",
@@ -212,12 +192,11 @@
               "RelativeToolTip": "BookAuthor.models\\Dto\\BookDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T16:35:09.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T16:35:09.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "GenderDTO.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\Dto\\GenderDTO.cs",
               "RelativeDocumentMoniker": "BookAuthor.models\\Dto\\GenderDTO.cs",
@@ -225,38 +204,62 @@
               "RelativeToolTip": "BookAuthor.models\\Dto\\GenderDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAMAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T15:28:20.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T15:28:20.253Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\Data\\Repository\\BookRepository.cs",
               "RelativeDocumentMoniker": "BookAuthor.data\\Data\\Repository\\BookRepository.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\Data\\Repository\\BookRepository.cs",
               "RelativeToolTip": "BookAuthor.data\\Data\\Repository\\BookRepository.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAArwAgAAAAsAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAADgvxYAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T14:37:42.843Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 2,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\Data\\Repository\\IRepository\\IBookRepository.cs",
               "RelativeDocumentMoniker": "BookAuthor.data\\Data\\Repository\\IRepository\\IBookRepository.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\Data\\Repository\\IRepository\\IBookRepository.cs",
               "RelativeToolTip": "BookAuthor.data\\Data\\Repository\\IRepository\\IBookRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T14:23:26.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.service\\Service\\BookService.cs",
+              "RelativeDocumentMoniker": "BookAuthor.service\\Service\\BookService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.service\\Service\\BookService.cs",
+              "RelativeToolTip": "BookAuthor.service\\Service\\BookService.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAmwHUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T19:41:41.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "CreateBookDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\Dto\\CreateBookDTO.cs",
+              "RelativeDocumentMoniker": "BookAuthor.models\\Dto\\CreateBookDTO.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\Dto\\CreateBookDTO.cs",
+              "RelativeToolTip": "BookAuthor.models\\Dto\\CreateBookDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T18:44:34.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AuthorDTO.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\Dto\\AuthorDTO.cs",
               "RelativeDocumentMoniker": "BookAuthor.models\\Dto\\AuthorDTO.cs",
@@ -264,12 +267,11 @@
               "RelativeToolTip": "BookAuthor.models\\Dto\\AuthorDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T15:28:46.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T15:28:46.095Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\Config\\MappingProfile.cs",
               "RelativeDocumentMoniker": "BookAuthor.models\\Config\\MappingProfile.cs",
@@ -277,12 +279,11 @@
               "RelativeToolTip": "BookAuthor.models\\Config\\MappingProfile.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T22:44:53.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T22:44:53.679Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor\\appsettings.json",
               "RelativeDocumentMoniker": "BookAuthor\\appsettings.json",
@@ -290,25 +291,11 @@
               "RelativeToolTip": "BookAuthor\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-13T21:49:06.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T21:49:06.982Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.service\\Service\\BookService.cs",
-              "RelativeDocumentMoniker": "BookAuthor.service\\Service\\BookService.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.service\\Service\\BookService.cs",
-              "RelativeToolTip": "BookAuthor.service\\Service\\BookService.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAWwB8AAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T19:41:41.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AuthorRepository.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\Data\\Repository\\AuthorRepository.cs",
               "RelativeDocumentMoniker": "BookAuthor.data\\Data\\Repository\\AuthorRepository.cs",
@@ -316,12 +303,11 @@
               "RelativeToolTip": "BookAuthor.data\\Data\\Repository\\AuthorRepository.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAArwAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T21:07:44.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T21:07:44.161Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\Data\\Repository\\Repository.cs",
               "RelativeDocumentMoniker": "BookAuthor.data\\Data\\Repository\\Repository.cs",
@@ -329,25 +315,11 @@
               "RelativeToolTip": "BookAuthor.data\\Data\\Repository\\Repository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T14:04:33.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T14:04:33.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GenderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\Data\\Repository\\GenderRepository.cs",
-              "RelativeDocumentMoniker": "BookAuthor.data\\Data\\Repository\\GenderRepository.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\Data\\Repository\\GenderRepository.cs",
-              "RelativeToolTip": "BookAuthor.data\\Data\\Repository\\GenderRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T16:07:33.455Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "20240813215453_Initial.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\Migrations\\20240813215453_Initial.cs",
               "RelativeDocumentMoniker": "BookAuthor.data\\Migrations\\20240813215453_Initial.cs",
@@ -355,12 +327,11 @@
               "RelativeToolTip": "BookAuthor.data\\Migrations\\20240813215453_Initial.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T21:54:53.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T21:54:53.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "20240813211340_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\Migrations\\20240813211340_InitialCreate.cs",
               "RelativeDocumentMoniker": "BookAuthor.data\\Migrations\\20240813211340_InitialCreate.cs",
@@ -368,12 +339,11 @@
               "RelativeToolTip": "BookAuthor.data\\Migrations\\20240813211340_InitialCreate.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T21:13:40.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T21:13:40.248Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "BookAuthor.http",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor\\BookAuthor.http",
               "RelativeDocumentMoniker": "BookAuthor\\BookAuthor.http",
@@ -381,12 +351,11 @@
               "RelativeToolTip": "BookAuthor\\BookAuthor.http",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-08-13T21:22:13.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T21:22:13.32Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "CustomException.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\Exceptions\\CustomException.cs",
               "RelativeDocumentMoniker": "BookAuthor.models\\Exceptions\\CustomException.cs",
@@ -394,12 +363,11 @@
               "RelativeToolTip": "BookAuthor.models\\Exceptions\\CustomException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T19:43:12.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T19:43:12.233Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "NotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\Exceptions\\NotFoundException.cs",
               "RelativeDocumentMoniker": "BookAuthor.models\\Exceptions\\NotFoundException.cs",
@@ -407,12 +375,11 @@
               "RelativeToolTip": "BookAuthor.models\\Exceptions\\NotFoundException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T16:00:42.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T16:00:42.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "Gender.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\Models\\Gender.cs",
               "RelativeDocumentMoniker": "BookAuthor.models\\Models\\Gender.cs",
@@ -420,12 +387,11 @@
               "RelativeToolTip": "BookAuthor.models\\Models\\Gender.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T16:03:58.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T16:03:58.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "IAuthorRepository.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\Data\\Repository\\IRepository\\IAuthorRepository.cs",
               "RelativeDocumentMoniker": "BookAuthor.data\\Data\\Repository\\IRepository\\IAuthorRepository.cs",
@@ -433,8 +399,7 @@
               "RelativeToolTip": "BookAuthor.data\\Data\\Repository\\IRepository\\IAuthorRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T14:25:52.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T14:25:52.561Z"
             }
           ]
         }

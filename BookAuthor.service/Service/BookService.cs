@@ -81,7 +81,7 @@ namespace BookAuthor.Service.Service
 
         public async Task<List<BookDTO>> FilterBooksByAuthor(int authorId, int pageNumber, int pageSize, Boolean orderByAsc)
         {
-            var books = await _unit.Books.GetAll();
+            var books = await _unit.Books.GetBooksWithDetails();
 
             if (books == null)
             {
@@ -110,7 +110,12 @@ namespace BookAuthor.Service.Service
 
         public async Task<List<BookDTO>> FilterBooksByGender(int genderId, int pageNumber, int pageSize, Boolean orderByAsc)
         {
-            var books = await _unit.Books.GetAll();
+            var books = await _unit.Books.GetBooksWithDetails();
+            if (books == null)
+            {
+                throw new NotFoundException("There are no books in DB");
+            }
+
             var result = books.Where(book => book.Gender.Id == genderId).Skip((pageNumber - 1) * pageSize).Take(pageSize);
             if (result.Count() == 0)
             {
@@ -217,8 +222,8 @@ namespace BookAuthor.Service.Service
                 }
             }
 
-            book.Title = dto.Title != null ? dto.Title : book.Title;
-            book.Description = dto.Description != null ? dto.Description : book.Description;
+            book.Title = dto.Title != null && dto.Title != "" ? dto.Title : book.Title;
+            book.Description = dto.Description != null && dto.Description != "" ? dto.Description : book.Description;
             book.Price = dto.Price > 1 ? dto.Price : book.Price;
             book.Author = author != null ? author : book.Author;
             book.Gender = gender != null ? gender : book.Gender;

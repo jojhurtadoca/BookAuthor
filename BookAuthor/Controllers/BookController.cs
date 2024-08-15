@@ -99,11 +99,6 @@ namespace BookAuthor.Controllers
                 return BadRequest("Book id must be greater than zero");
             }
 
-            if (ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
             try
             {
                 dto.Id = id;

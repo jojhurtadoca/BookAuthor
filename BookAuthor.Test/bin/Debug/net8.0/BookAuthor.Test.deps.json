@@ -9,6 +9,7 @@
       "BookAuthor.Test/1.0.0": {
         "dependencies": {
           "BookAuthor": "1.0.0",
+          "BookAuthor.Models": "1.0.0",
           "BookAuthor.Service": "1.0.0",
           "Microsoft.AspNetCore.Mvc.WebApiCompatShim": "2.2.0",
           "Microsoft.NET.Test.Sdk": "17.8.0",

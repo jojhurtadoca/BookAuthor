@@ -8,17 +8,17 @@ namespace BookAuthor.Service.Service.IService
 
         Task<BookDTO> UpdateBook(UpdateBookDTO dto);
 
-        Task<Boolean> DeleteBook(int id);
+        Task<Boolean> DeleteBook(Guid id);
 
-        Task<List<BookDTO>> FilterBooksByAuthor(int authorId, int pageNumber, int pageSize, Boolean orderByAsc);
+        Task<List<BookDTO>> FilterBooksByAuthor(Guid authorId, int pageNumber, int pageSize, Boolean orderByAsc);
 
-        Task<List<BookDTO>> FilterBooksByGenre(int genreId, int pageNumber, int pageSize, Boolean orderByAsc);
+        Task<List<BookDTO>> FilterBooksByGenre(Guid genreId, int pageNumber, int pageSize, Boolean orderByAsc);
 
         Task<List<BookDTO>> FilterBooksByPriceRange(int startPrice, int endPrice, int pageNumber, int pageSize, Boolean orderByAsc);
 
         Task<List <BookDTO>> GetBooks(int pageNumber, int pageSize, Boolean orderByAsc);
 
-        Task<BookDTO> GetBookById(int id);
+        Task<BookDTO> GetBookById(Guid id);
 
         Task<BookDTO> GetTheMostExpensiveBook();
 

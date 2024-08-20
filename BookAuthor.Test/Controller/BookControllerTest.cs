@@ -17,22 +17,25 @@ namespace BookAuthor.Test.Controller
         private CreateBookDTO CreateBook = new CreateBookDTO();
         private GenreDTO Genre = new GenreDTO();
         private AuthorDTO Author = new AuthorDTO();
+        private Guid BookId = Guid.NewGuid();
 
         public BookControllerTest()
         {
-            CreateBook.Author = 1;
+            var authorGuid = Guid.NewGuid();
+            var genreGuid = Guid.NewGuid();
+            CreateBook.Author = authorGuid;
             CreateBook.Title = "Test title";
             CreateBook.Description = "Test description";
             CreateBook.Price = 1000;
-            CreateBook.Genre = 1;
+            CreateBook.Genre = genreGuid;
 
-            Genre.Id = 1;
+            Genre.Id = genreGuid;
             Genre.Name = "Genre test 1";
 
-            Author.Id = 1;
+            Author.Id = authorGuid;
             Author.Name = "Author name 1";
 
-            Book.Id = 1;
+            Book.Id = BookId;
             Book.Title = "Test title";
             Book.Description = "Test description";
             Book.Price = 1000;
@@ -93,11 +96,11 @@ namespace BookAuthor.Test.Controller
 
             var mockService = new Mock<IBookService>();
 
-            mockService.Setup(p => p.GetBookById(1)).Returns(Task.FromResult(Book));
+            mockService.Setup(p => p.GetBookById(BookId)).Returns(Task.FromResult(Book));
 
             bookController = new BookController(mock.Object, mockService.Object);
 
-            var result = await bookController.GetBook(1);
+            var result = await bookController.GetBook(BookId);
 
             var okResult = result as JsonResult;
             var jsonString = JsonSerializer.Serialize(okResult?.Value);
@@ -105,24 +108,6 @@ namespace BookAuthor.Test.Controller
 
             Assert.IsNotNull(resultJson);
             Assert.That(201 == resultJson.GetProperty("StatusCode").GetInt64());
-        }
-
-        [Test]
-        public async Task GetBookByIdTestWithIdLessThan1()
-        {
-            var mock = new Mock<ILogger<BookController>>();
-            ILogger<BookController> logger = mock.Object;
-            var mockService = new Mock<IBookService>();
-
-            bookController = new BookController(mock.Object, mockService.Object);
-
-            var result = await bookController.GetBook(0);
-
-            var okResult = result as BadRequestObjectResult;
-
-            Assert.IsNotNull(okResult);
-            Assert.That(400 == okResult.StatusCode);
-            Assert.That("Book id must be greater than zero".Equals(okResult.Value));
         }
     }
 }

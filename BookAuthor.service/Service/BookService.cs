@@ -59,7 +59,7 @@ namespace BookAuthor.Service.Service
             return mapperBook(newBook);
         }
 
-        public async Task<Boolean> DeleteBook(int id)
+        public async Task<Boolean> DeleteBook(Guid id)
         {
             // We need to check if the books is in the DB
             var book = await _unit.Books.GetById(id);
@@ -75,7 +75,7 @@ namespace BookAuthor.Service.Service
             return result;
         }
 
-        public async Task<List<BookDTO>> FilterBooksByAuthor(int authorId, int pageNumber, int pageSize, Boolean orderByAsc)
+        public async Task<List<BookDTO>> FilterBooksByAuthor(Guid authorId, int pageNumber, int pageSize, Boolean orderByAsc)
         {
             var books = await _unit.Books.GetBooksWithDetails();
 
@@ -104,7 +104,7 @@ namespace BookAuthor.Service.Service
             return _mapper.Map<List<Book>, List<BookDTO>>(final.ToList());
         }
 
-        public async Task<List<BookDTO>> FilterBooksByGenre(int genreId, int pageNumber, int pageSize, Boolean orderByAsc)
+        public async Task<List<BookDTO>> FilterBooksByGenre(Guid genreId, int pageNumber, int pageSize, Boolean orderByAsc)
         {
             var books = await _unit.Books.GetBooksWithDetails();
             if (books == null)
@@ -148,7 +148,7 @@ namespace BookAuthor.Service.Service
             return _mapper.Map<List<Book>, List<BookDTO>>(final.ToList());
         }
 
-        public async Task<BookDTO> GetBookById(int id)
+        public async Task<BookDTO> GetBookById(Guid id)
         {
             var book = await _unit.Books.GetById(id);
             if (book == null)
@@ -193,31 +193,24 @@ namespace BookAuthor.Service.Service
             }
 
             //var author = Author ?? null;
-            var genre = (Genre?) null;
+            var genre = new Genre();
 
             var author = new Author();
 ;
             // We need to check if the author and the genre are in the DB
 
-            if (dto.Author > 0)
-            {
-                author = await _authorRepository.GetById(dto.Author);
+            author = await _authorRepository.GetById(dto.Author);
 
-                if (author == null)
-                {
-                    throw new NotFoundException("Author with id '" + dto.Author + "' doesn't exist");
-                }
+            if (author == null)
+            {
+                throw new NotFoundException("Author with id '" + dto.Author + "' doesn't exist");
             }
 
-            if (dto.Genre > 0)
+            genre = await _genreRepository.GetById(dto.Genre);
+
+            if (genre == null)
             {
-
-                genre = await _genreRepository.GetById(dto.Genre);
-
-                if (genre == null)
-                {
-                    throw new NotFoundException("Genre with id '" + dto.Genre + "' doesn't exist");
-                }
+                throw new NotFoundException("Genre with id '" + dto.Genre + "' doesn't exist");
             }
 
             book.Title = dto.Title != null && dto.Title != "" ? dto.Title : book.Title;

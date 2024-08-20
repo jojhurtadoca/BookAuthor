@@ -63,13 +63,8 @@ namespace BookAuthor.Controllers
         /// </summary>
         /// <returns>Book by id.</returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetBook(int id)
+        public async Task<IActionResult> GetBook(Guid id)
         {
-            if (id <= 0)
-            {
-                return BadRequest("Book id must be greater than zero");
-            }
-
             try
             {
                 var result = await _bookService.GetBookById(id);
@@ -92,16 +87,11 @@ namespace BookAuthor.Controllers
         /// </summary>
         /// <returns>Json Result.</returns>
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateBook(int id, UpdateBookDTO dto)
+        public async Task<IActionResult> UpdateBook(UpdateBookDTO dto)
         {
-            if (id <= 0)
-            {
-                return BadRequest("Book id must be greater than zero");
-            }
 
             try
             {
-                dto.Id = id;
                 var result = await _bookService.UpdateBook(dto);
                 return CreateJsonResult(200, "Book updated Successfully", null);
             }
@@ -122,12 +112,8 @@ namespace BookAuthor.Controllers
         /// </summary>
         /// <returns>Json Result.</returns>
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteBook(int id)
+        public async Task<IActionResult> DeleteBook(Guid id)
         {
-            if (id <= 0)
-            {
-                return BadRequest("Book id must be greater than zero");
-            }
             try
             {
                 var result = await _bookService.DeleteBook(id);
@@ -187,12 +173,8 @@ namespace BookAuthor.Controllers
         /// </summary>
         /// <returns>The list of the books filtered by Author.</returns>
         [HttpGet("/filter/author")]
-        public async Task<IActionResult> GetBoooksByAuthor(int authorId, int pageNumber = 1, int pageSize = 10, Boolean orderByAsc = true)
+        public async Task<IActionResult> GetBoooksByAuthor(Guid authorId, int pageNumber = 1, int pageSize = 10, Boolean orderByAsc = true)
         {
-            if (authorId <= 0)
-            {
-                return BadRequest("Author id can't be less or equal to zero");
-            }
             if (pageNumber <= 0)
             {
                 return BadRequest("Page Number can't be less or equal to zero");
@@ -223,12 +205,8 @@ namespace BookAuthor.Controllers
         /// </summary>
         /// <returns>The list of the books filtered by Genre.</returns>
         [HttpGet("/filter/genre")]
-        public async Task<IActionResult> GetBoooksByGenre(int genreId, int pageNumber = 1, int pageSize = 10, Boolean orderByAsc = true)
+        public async Task<IActionResult> GetBoooksByGenre(Guid genreId, int pageNumber = 1, int pageSize = 10, Boolean orderByAsc = true)
         {
-            if (genreId <= 0)
-            {
-                return BadRequest("Author id can't be less or equal to zero");
-            }
             if (pageNumber <= 0)
             {
                 return BadRequest("Page Number can't be less or equal to zero");

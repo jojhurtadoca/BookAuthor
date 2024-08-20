@@ -17,7 +17,7 @@ namespace BookManagement.data.Data.Repository
             _logger = logger;
         }
 
-        public async Task<T> GetById(int id)
+        public async Task<T> GetById(Guid id)
         {
             try
             {
@@ -65,7 +65,7 @@ namespace BookManagement.data.Data.Repository
 
         }
 
-        public async Task<Boolean> Delete(int id)
+        public async Task<Boolean> Delete(Guid id)
         {
             try
             {

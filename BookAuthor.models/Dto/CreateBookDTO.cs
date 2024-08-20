@@ -10,8 +10,7 @@ namespace BookAuthor.Models.Dto
         public string Title { get; set; }
 
         [Required(ErrorMessage = "Genre is required")]
-        [Range(1, int.MaxValue, ErrorMessage = "Genre ID can not be less than 1")]
-        public int Genre { get; set; }
+        public Guid Genre { get; set; }
 
         public string Description { get; set; }
 
@@ -20,7 +19,6 @@ namespace BookAuthor.Models.Dto
         public double Price { get; set; }
 
         [Required(ErrorMessage = "Author is required")]
-        [Range(1, int.MaxValue, ErrorMessage = "Author ID can not be less than 1")]
-        public int Author { get; set; }
+        public Guid Author { get; set; }
     }
 }

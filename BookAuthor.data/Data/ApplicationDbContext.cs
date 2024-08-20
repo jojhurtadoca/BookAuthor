@@ -22,15 +22,15 @@ namespace BookManagement.data.Data
 
             // Seed data
             modelBuilder.Entity<Author>().HasData(
-                new Author { Id = 1, Name = "Gabriel García Marquez" },
-                new Author { Id = 2, Name = "Pablo Neruda" },
-                new Author { Id = 3, Name = "Edgar Alan Poe" }
+                new Author { Id = Guid.NewGuid(), Name = "Gabriel García Marquez" },
+                new Author { Id = Guid.NewGuid(), Name = "Pablo Neruda" },
+                new Author { Id = Guid.NewGuid(), Name = "Edgar Alan Poe" }
             );
 
             modelBuilder.Entity<Genre>().HasData(
-                new Genre { Id = 1, Name = "Comedy" },
-                new Genre { Id = 2, Name = "Sci fi" },
-                new Genre { Id = 3, Name = "Medieval" }
+                new Genre { Id = Guid.NewGuid(), Name = "Comedy" },
+                new Genre { Id = Guid.NewGuid(), Name = "Sci fi" },
+                new Genre { Id = Guid.NewGuid(), Name = "Medieval" }
             );
         }
     }

@@ -40,11 +40,11 @@
             </summary>
             <returns>The list of the books filtered by Author.</returns>
         </member>
-        <member name="M:BookAuthor.Controllers.BookController.GetBoooksByGender(System.Int32,System.Int32,System.Int32,System.Boolean)">
+        <member name="M:BookAuthor.Controllers.BookController.GetBoooksByGenre(System.Int32,System.Int32,System.Int32,System.Boolean)">
             <summary>
-            Filters books by Gender
+            Filters books by Genre
             </summary>
-            <returns>The list of the books filtered by Gender.</returns>
+            <returns>The list of the books filtered by Genre.</returns>
         </member>
         <member name="M:BookAuthor.Controllers.BookController.GetTheMostExpensiveBook">
             <summary>

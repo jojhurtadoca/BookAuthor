@@ -21,7 +21,7 @@ namespace BookAuthor.Data.Data.Repository
         public async Task<List<Book>> GetBooksWithDetails()
         {
             return _dbContext.Set<Book>()
-                .Include(g => g.Gender)
+                .Include(g => g.Genre)
                 .Include(g => g.Author)
                 .ToList();
         }

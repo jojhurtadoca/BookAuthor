@@ -12,7 +12,7 @@ namespace BookAuthor.Service.Service.IService
 
         Task<List<BookDTO>> FilterBooksByAuthor(int authorId, int pageNumber, int pageSize, Boolean orderByAsc);
 
-        Task<List<BookDTO>> FilterBooksByGender(int genderId, int pageNumber, int pageSize, Boolean orderByAsc);
+        Task<List<BookDTO>> FilterBooksByGenre(int genreId, int pageNumber, int pageSize, Boolean orderByAsc);
 
         Task<List<BookDTO>> FilterBooksByPriceRange(int startPrice, int endPrice, int pageNumber, int pageSize, Boolean orderByAsc);
 

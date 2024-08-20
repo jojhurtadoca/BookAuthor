@@ -5,9 +5,7 @@ using BookAuthor.Models.Dto;
 using BookAuthor.Models.Exceptions;
 using BookAuthor.Models.Models;
 using BookAuthor.Service.Service.IService;
-using Microsoft.Data.SqlClient;
 using Models.models;
-using System.Data.Common;
 
 namespace BookAuthor.Service.Service
 {
@@ -15,21 +13,19 @@ namespace BookAuthor.Service.Service
     {
         public readonly IUnitOfWorkBook _unit;
         private readonly IAuthorRepository _authorRepository;
-        private readonly IGenderRepository _genderRepository;
+        private readonly IGenreRepository _genreRepository;
         private readonly IMapper _mapper;
 
-        public BookService (IUnitOfWorkBook unit, IMapper mapper, IAuthorRepository author, IGenderRepository genderRepository)
+        public BookService (IUnitOfWorkBook unit, IMapper mapper, IAuthorRepository author, IGenreRepository genreRepository)
         {
             _unit = unit;
             _mapper = mapper;
             _authorRepository = author;
-            _genderRepository = genderRepository;
+            _genreRepository = genreRepository;
         }
 
         public BookDTO mapperBook(Book book)
         {
-            var genderDTO = _mapper.Map<GenderDTO>(book.Gender);
-            var authorDTO = _mapper.Map<AuthorDTO>(book.Author);
             return _mapper.Map<BookDTO>(book);
         }
         public async Task<BookDTO> CreateBook(CreateBookDTO dto)
@@ -42,16 +38,16 @@ namespace BookAuthor.Service.Service
                 throw new NotFoundException("Author with id '" +  dto.Author + "' doesn't exist");
             }
 
-            var gender = await _genderRepository.GetById(dto.Gender);
+            var genre = await _genreRepository.GetById(dto.Genre);
 
-            if (gender == null)
+            if (genre == null)
             {
-                throw new NotFoundException("Gender with id '" + dto.Gender + "' doesn't exist");
+                throw new NotFoundException("Genre with id '" + dto.Genre + "' doesn't exist");
             }
             var date = new DateTime();
             var newBook = new Book();
             newBook.Author = author;
-            newBook.Gender = gender;
+            newBook.Genre = genre;
             newBook.Description = dto.Description;
             newBook.Title = dto.Title;
             newBook.Price = dto.Price;
@@ -108,7 +104,7 @@ namespace BookAuthor.Service.Service
             return _mapper.Map<List<Book>, List<BookDTO>>(final.ToList());
         }
 
-        public async Task<List<BookDTO>> FilterBooksByGender(int genderId, int pageNumber, int pageSize, Boolean orderByAsc)
+        public async Task<List<BookDTO>> FilterBooksByGenre(int genreId, int pageNumber, int pageSize, Boolean orderByAsc)
         {
             var books = await _unit.Books.GetBooksWithDetails();
             if (books == null)
@@ -116,21 +112,21 @@ namespace BookAuthor.Service.Service
                 throw new NotFoundException("There are no books in DB");
             }
 
-            var result = books.Where(book => book.Gender.Id == genderId).Skip((pageNumber - 1) * pageSize).Take(pageSize);
+            var result = books.Where(book => book.Genre.Id == genreId).Skip((pageNumber - 1) * pageSize).Take(pageSize);
             if (result.Count() == 0)
             {
-                throw new NotFoundException("There are no books related with the gender with id '" + genderId + "'");
+                throw new NotFoundException("There are no books related with the genre with id '" + genreId + "'");
             }
 
             var final = result;
 
             if (orderByAsc)
             {
-                final = result.OrderBy(book => book.Gender.Id);
+                final = result.OrderBy(book => book.Genre.Id);
             }
             else
             {
-                final = result.OrderByDescending(book => book.Gender.Id);
+                final = result.OrderByDescending(book => book.Genre.Id);
             }
             return _mapper.Map<List<Book>, List<BookDTO>>(final.ToList());
         }
@@ -196,9 +192,11 @@ namespace BookAuthor.Service.Service
                 throw new NotFoundException("Book with id '" + dto.Id + "' doesn't exist");
             }
 
-            var author = (Author?) null;
-            var gender = (Gender?) null;
+            //var author = Author ?? null;
+            var genre = (Genre?) null;
 
+            var author = new Author();
+;
             // We need to check if the author and the genre are in the DB
 
             if (dto.Author > 0)
@@ -211,14 +209,14 @@ namespace BookAuthor.Service.Service
                 }
             }
 
-            if (dto.Gender > 0)
+            if (dto.Genre > 0)
             {
 
-                gender = await _genderRepository.GetById(dto.Gender);
+                genre = await _genreRepository.GetById(dto.Genre);
 
-                if (gender == null)
+                if (genre == null)
                 {
-                    throw new NotFoundException("Gender with id '" + dto.Gender + "' doesn't exist");
+                    throw new NotFoundException("Genre with id '" + dto.Genre + "' doesn't exist");
                 }
             }
 
@@ -226,7 +224,7 @@ namespace BookAuthor.Service.Service
             book.Description = dto.Description != null && dto.Description != "" ? dto.Description : book.Description;
             book.Price = dto.Price > 1 ? dto.Price : book.Price;
             book.Author = author != null ? author : book.Author;
-            book.Gender = gender != null ? gender : book.Gender;
+            book.Genre = genre != null ? genre : book.Genre;
             book.UpdatedAt = new DateTime();
 
             var result = await _unit.Books.Update(book);

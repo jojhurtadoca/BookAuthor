@@ -14,7 +14,7 @@ namespace BookManagement.data.Data
 
         public DbSet<Author> Author {  get; set; }
         public DbSet<Book> Book { get; set; }
-        public DbSet<Gender> Gender { get; set; }
+        public DbSet<Genre> Genre { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -27,10 +27,10 @@ namespace BookManagement.data.Data
                 new Author { Id = 3, Name = "Edgar Alan Poe" }
             );
 
-            modelBuilder.Entity<Gender>().HasData(
-                new Gender { Id = 1, Name = "Comedy" },
-                new Gender { Id = 2, Name = "Sci fi" },
-                new Gender { Id = 3, Name = "Medieval" }
+            modelBuilder.Entity<Genre>().HasData(
+                new Genre { Id = 1, Name = "Comedy" },
+                new Genre { Id = 2, Name = "Sci fi" },
+                new Genre { Id = 3, Name = "Medieval" }
             );
         }
     }

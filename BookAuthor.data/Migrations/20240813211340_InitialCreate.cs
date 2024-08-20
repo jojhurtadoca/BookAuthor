@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -66,7 +65,7 @@ namespace BookAuthor.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Gender",
+                name: "Genre",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -77,7 +76,7 @@ namespace BookAuthor.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Gender", x => x.Id);
+                    table.PrimaryKey("PK_Genre", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -193,7 +192,7 @@ namespace BookAuthor.Data.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
-                    GenderId = table.Column<int>(type: "int", nullable: false),
+                    GenreId = table.Column<int>(type: "int", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<double>(type: "float", nullable: false),
                     AuthorId = table.Column<int>(type: "int", nullable: false),
@@ -210,9 +209,9 @@ namespace BookAuthor.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Book_Gender_GenderId",
-                        column: x => x.GenderId,
-                        principalTable: "Gender",
+                        name: "FK_Book_Genre_GenreId",
+                        column: x => x.GenreId,
+                        principalTable: "Genre",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -262,9 +261,9 @@ namespace BookAuthor.Data.Migrations
                 column: "AuthorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Book_GenderId",
+                name: "IX_Book_GenreId",
                 table: "Book",
-                column: "GenderId");
+                column: "GenreId");
         }
 
         /// <inheritdoc />
@@ -298,7 +297,7 @@ namespace BookAuthor.Data.Migrations
                 name: "Author");
 
             migrationBuilder.DropTable(
-                name: "Gender");
+                name: "Genre");
         }
     }
 }

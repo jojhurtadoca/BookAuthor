@@ -219,13 +219,13 @@ namespace BookAuthor.Controllers
         }
 
         /// <summary>
-        /// Filters books by Gender
+        /// Filters books by Genre
         /// </summary>
-        /// <returns>The list of the books filtered by Gender.</returns>
-        [HttpGet("/filter/gender")]
-        public async Task<IActionResult> GetBoooksByGender(int genderId, int pageNumber = 1, int pageSize = 10, Boolean orderByAsc = true)
+        /// <returns>The list of the books filtered by Genre.</returns>
+        [HttpGet("/filter/genre")]
+        public async Task<IActionResult> GetBoooksByGenre(int genreId, int pageNumber = 1, int pageSize = 10, Boolean orderByAsc = true)
         {
-            if (genderId <= 0)
+            if (genreId <= 0)
             {
                 return BadRequest("Author id can't be less or equal to zero");
             }
@@ -239,8 +239,8 @@ namespace BookAuthor.Controllers
             }
             try
             {
-                var books = await _bookService.FilterBooksByGender(genderId, pageNumber, pageSize, orderByAsc);
-                return CreateJsonResult(201, "Books related to the gender id '" + genderId + "' got successfully", books);
+                var books = await _bookService.FilterBooksByGenre(genreId, pageNumber, pageSize, orderByAsc);
+                return CreateJsonResult(201, "Books related to the genre id '" + genreId + "' got successfully", books);
             }
             catch (NotFoundException ex)
             {

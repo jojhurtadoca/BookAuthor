@@ -11,3 +11,16 @@ C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.models\obj\Debug\net8.0\Book
 C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.models\obj\Debug\net8.0\ref\BookAuthor.Models.dll
 C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.models\obj\Debug\net8.0\BookAuthor.Models.csproj.AssemblyReference.cache
 C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.models\obj\Debug\net8.0\BookAuthor.Models.sourcelink.json
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.models\bin\Debug\net8.0\BookAuthor.Models.deps.json
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.models\bin\Debug\net8.0\BookAuthor.Models.dll
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.models\bin\Debug\net8.0\BookAuthor.Models.pdb
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.models\obj\Debug\net8.0\BookAuthor.Models.csproj.AssemblyReference.cache
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.models\obj\Debug\net8.0\BookAuthor.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.models\obj\Debug\net8.0\BookAuthor.Models.AssemblyInfoInputs.cache
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.models\obj\Debug\net8.0\BookAuthor.Models.AssemblyInfo.cs
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.models\obj\Debug\net8.0\BookAuthor.Models.csproj.CoreCompileInputs.cache
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.models\obj\Debug\net8.0\BookAuthor.Models.sourcelink.json
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.models\obj\Debug\net8.0\BookAuthor.Models.dll
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.models\obj\Debug\net8.0\refint\BookAuthor.Models.dll
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.models\obj\Debug\net8.0\BookAuthor.Models.pdb
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.models\obj\Debug\net8.0\ref\BookAuthor.Models.dll

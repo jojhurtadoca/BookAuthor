@@ -16,3 +16,21 @@ C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.service\obj\Debug\net8.0\ref
 C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.service\obj\Debug\net8.0\BookAuthor.Service.pdb
 C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.service\obj\Debug\net8.0\ref\BookAuthor.Service.dll
 C:\Users\Usuario\source\repos\BookAuthor\BookAuthor.service\obj\Debug\net8.0\BookAuthor.Service.sourcelink.json
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\bin\Debug\net8.0\BookAuthor.Service.deps.json
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\bin\Debug\net8.0\BookAuthor.Service.dll
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\bin\Debug\net8.0\BookAuthor.Service.pdb
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\bin\Debug\net8.0\BookAuthor.Data.dll
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\bin\Debug\net8.0\BookAuthor.Models.dll
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\bin\Debug\net8.0\BookAuthor.Data.pdb
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\bin\Debug\net8.0\BookAuthor.Models.pdb
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\obj\Debug\net8.0\BookAuthor.Service.csproj.AssemblyReference.cache
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\obj\Debug\net8.0\BookAuthor.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\obj\Debug\net8.0\BookAuthor.Service.AssemblyInfoInputs.cache
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\obj\Debug\net8.0\BookAuthor.Service.AssemblyInfo.cs
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\obj\Debug\net8.0\BookAuthor.Service.csproj.CoreCompileInputs.cache
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\obj\Debug\net8.0\BookAuthor.Service.sourcelink.json
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\obj\Debug\net8.0\BookAuth.926AE86D.Up2Date
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\obj\Debug\net8.0\BookAuthor.Service.dll
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\obj\Debug\net8.0\refint\BookAuthor.Service.dll
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\obj\Debug\net8.0\BookAuthor.Service.pdb
+C:\Users\johurtado\OneDrive - ENDAVA\Documents\Jose Hurtado\projects\C#_react\BookAuthor\BookAuthor.service\obj\Debug\net8.0\ref\BookAuthor.Service.dll

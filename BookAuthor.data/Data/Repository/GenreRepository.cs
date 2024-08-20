@@ -6,12 +6,12 @@ using Microsoft.Extensions.Logging;
 
 namespace BookAuthor.Data.Data.Repository
 {
-    public class GenderRepository: Repository<Gender>, IGenderRepository
+    public class GenreRepository: Repository<Genre>, IGenreRepository
     {
         public readonly ApplicationDbContext _dbContext;
-        private readonly ILogger<GenderRepository> _logger;
+        private readonly ILogger<GenreRepository> _logger;
 
-        public GenderRepository(ApplicationDbContext dbContext, ILogger<GenderRepository> logger) : base(dbContext, logger)
+        public GenreRepository(ApplicationDbContext dbContext, ILogger<GenreRepository> logger) : base(dbContext, logger)
         {
             _dbContext = dbContext;
             _logger = logger;

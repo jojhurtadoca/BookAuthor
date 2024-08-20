@@ -9,14 +9,14 @@ namespace BookAuthor.Models.Dto
         [MaxLength(150, ErrorMessage = "Title to long")]
         public string Title { get; set; }
 
-        [Required(ErrorMessage = "Gender is required")]
-        [Range(1, int.MaxValue, ErrorMessage = "Gender ID can not be less than 1")]
-        public int Gender { get; set; }
+        [Required(ErrorMessage = "Genre is required")]
+        [Range(1, int.MaxValue, ErrorMessage = "Genre ID can not be less than 1")]
+        public int Genre { get; set; }
 
         public string Description { get; set; }
 
         [Required(ErrorMessage = "Price is required")]
-        [Range(1, double.MaxValue, ErrorMessage = "Gender can not be less than 1$")]
+        [Range(1, double.MaxValue, ErrorMessage = "Genre can not be less than 1$")]
         public double Price { get; set; }
 
         [Required(ErrorMessage = "Author is required")]

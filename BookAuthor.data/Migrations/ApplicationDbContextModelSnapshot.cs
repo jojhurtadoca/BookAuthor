@@ -22,7 +22,7 @@ namespace BookAuthor.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("BookAuthor.Models.Models.Gender", b =>
+            modelBuilder.Entity("BookAuthor.Models.Models.Genre", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -43,7 +43,7 @@ namespace BookAuthor.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Gender");
+                    b.ToTable("Genre");
 
                     b.HasData(
                         new
@@ -332,7 +332,7 @@ namespace BookAuthor.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("GenderId")
+                    b.Property<int>("GenreId")
                         .HasColumnType("int");
 
                     b.Property<double>("Price")
@@ -350,7 +350,7 @@ namespace BookAuthor.Data.Migrations
 
                     b.HasIndex("AuthorId");
 
-                    b.HasIndex("GenderId");
+                    b.HasIndex("GenreId");
 
                     b.ToTable("Book");
                 });
@@ -414,15 +414,15 @@ namespace BookAuthor.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BookAuthor.Models.Models.Gender", "Gender")
+                    b.HasOne("BookAuthor.Models.Models.Genre", "Genre")
                         .WithMany()
-                        .HasForeignKey("GenderId")
+                        .HasForeignKey("GenreId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Author");
 
-                    b.Navigation("Gender");
+                    b.Navigation("Genre");
                 });
 #pragma warning restore 612, 618
         }

@@ -3,7 +3,7 @@ using BookManagement.data.Data.Repository.IRepository;
 
 namespace BookAuthor.Data.Data.Repository.IRepository
 {
-    public interface IGenderRepository : IRepository<Gender>
+    public interface IGenreRepository : IRepository<Genre>
     {
     }
 }

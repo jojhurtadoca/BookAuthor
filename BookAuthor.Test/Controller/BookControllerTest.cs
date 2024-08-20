@@ -4,9 +4,7 @@ using BookAuthor.Models.Exceptions;
 using BookAuthor.Service.Service.IService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Models.models;
 using Moq;
-using System;
 using System.Text.Json;
 
 namespace BookAuthor.Test.Controller
@@ -15,37 +13,31 @@ namespace BookAuthor.Test.Controller
     public class BookControllerTest {
 
         private BookController bookController;
+        private BookDTO Book = new BookDTO();
+        private CreateBookDTO CreateBook = new CreateBookDTO();
+        private GenreDTO Genre = new GenreDTO();
+        private AuthorDTO Author = new AuthorDTO();
 
-        private CreateBookDTO CreateDTO()
+        public BookControllerTest()
         {
-            CreateBookDTO dto = new CreateBookDTO();
-            dto.Author = 1;
-            dto.Title = "Test title";
-            dto.Description = "Test description";
-            dto.Price = 1000;
-            dto.Gender = 1;
+            CreateBook.Author = 1;
+            CreateBook.Title = "Test title";
+            CreateBook.Description = "Test description";
+            CreateBook.Price = 1000;
+            CreateBook.Genre = 1;
 
-            return dto;
-        }
+            Genre.Id = 1;
+            Genre.Name = "Genre test 1";
 
-        private BookDTO CreateBookDTO()
-        {
-            GenderDTO genderDTO = new GenderDTO();
-            genderDTO.Id = 1;
-            genderDTO.Name = "Gender test 1";
+            Author.Id = 1;
+            Author.Name = "Author name 1";
 
-            AuthorDTO author = new AuthorDTO();
-            author.Id = 1;
-            author.Name = "Author name 1";
-
-            BookDTO bookDTO = new BookDTO();
-            bookDTO.Id = 1;
-            bookDTO.Title = "Test title";
-            bookDTO.Description = "Test description";
-            bookDTO.Price = 1000;
-            bookDTO.Gender = genderDTO;
-            bookDTO.Author = author;
-            return bookDTO;
+            Book.Id = 1;
+            Book.Title = "Test title";
+            Book.Description = "Test description";
+            Book.Price = 1000;
+            Book.Genre = Genre;
+            Book.Author = Author;
         }
 
         [Test]
@@ -57,14 +49,11 @@ namespace BookAuthor.Test.Controller
 
             var mockService = new Mock<IBookService>();
 
-            var dto = CreateDTO();
-            var bookDTO = CreateBookDTO();
-
-            mockService.Setup(p => p.CreateBook(dto)).Returns(Task.FromResult(bookDTO));
+            mockService.Setup(p => p.CreateBook(CreateBook)).Returns(Task.FromResult(Book));
 
             bookController = new BookController(mock.Object, mockService.Object);
 
-            var result = await bookController.CreateBook(dto);
+            var result = await bookController.CreateBook(CreateBook);
 
             var okResult = result as JsonResult;
             var jsonString = JsonSerializer.Serialize(okResult?.Value);
@@ -82,13 +71,12 @@ namespace BookAuthor.Test.Controller
             ILogger<BookController> logger = mock.Object;
 
             var mockService = new Mock<IBookService>();
-            var dto = CreateDTO();
 
-            mockService.Setup(p => p.CreateBook(dto)).Throws(new NotFoundException("Author with id '1' doesn't exist"));
+            mockService.Setup(p => p.CreateBook(CreateBook)).Throws(new NotFoundException("Author with id '1' doesn't exist"));
 
             bookController = new BookController(mock.Object, mockService.Object);
 
-            var result = await bookController.CreateBook(dto);
+            var result = await bookController.CreateBook(CreateBook);
 
             var okResult = result as NotFoundObjectResult;
 
@@ -103,12 +91,9 @@ namespace BookAuthor.Test.Controller
             var mock = new Mock<ILogger<BookController>>();
             ILogger<BookController> logger = mock.Object;
 
-
             var mockService = new Mock<IBookService>();
 
-            var bookDTO = CreateBookDTO();
-
-            mockService.Setup(p => p.GetBookById(1)).Returns(Task.FromResult(bookDTO));
+            mockService.Setup(p => p.GetBookById(1)).Returns(Task.FromResult(Book));
 
             bookController = new BookController(mock.Object, mockService.Object);
 

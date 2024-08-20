@@ -11,7 +11,7 @@ namespace BookAuthor.Models.Config
         {
             CreateMap<Book, BookDTO>();
             CreateMap<Author, AuthorDTO>();
-            CreateMap<Gender, GenderDTO>();
+            CreateMap<Genre, GenreDTO>();
         }
     }
 }

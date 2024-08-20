@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -24,7 +23,7 @@ namespace BookAuthor.Data.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Gender",
+                table: "Genre",
                 columns: new[] { "Id", "CreatedAt", "Name", "UpdatedAt" },
                 values: new object[,]
                 {
@@ -53,17 +52,17 @@ namespace BookAuthor.Data.Migrations
                 keyValue: 3);
 
             migrationBuilder.DeleteData(
-                table: "Gender",
+                table: "Genre",
                 keyColumn: "Id",
                 keyValue: 1);
 
             migrationBuilder.DeleteData(
-                table: "Gender",
+                table: "Genre",
                 keyColumn: "Id",
                 keyValue: 2);
 
             migrationBuilder.DeleteData(
-                table: "Gender",
+                table: "Genre",
                 keyColumn: "Id",
                 keyValue: 3);
         }

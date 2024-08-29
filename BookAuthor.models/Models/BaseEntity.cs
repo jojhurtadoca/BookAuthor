@@ -6,7 +6,11 @@ namespace BookAuthor.Models.Models
     {
         [Key]
         public Guid Id { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
+
+        [Required]
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        [Required]
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookAuthor.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d357cf08660630b51cf842ff60943ba89027f2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24eb78566dd68490ee8109c483c2127f8d03f4e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookAuthor.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookAuthor.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

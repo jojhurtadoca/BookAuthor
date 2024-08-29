@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\johurtado\\OneDrive - ENDAVA\\Documents\\Jose Hurtado\\projects\\C#_react\\BookAuthor\\BookAuthor.data\\BookAuthor.Data.csproj": {}
+    "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\BookAuthor.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\johurtado\\OneDrive - ENDAVA\\Documents\\Jose Hurtado\\projects\\C#_react\\BookAuthor\\BookAuthor.data\\BookAuthor.Data.csproj": {
+    "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\BookAuthor.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\johurtado\\OneDrive - ENDAVA\\Documents\\Jose Hurtado\\projects\\C#_react\\BookAuthor\\BookAuthor.data\\BookAuthor.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\BookAuthor.Data.csproj",
         "projectName": "BookAuthor.Data",
-        "projectPath": "C:\\Users\\johurtado\\OneDrive - ENDAVA\\Documents\\Jose Hurtado\\projects\\C#_react\\BookAuthor\\BookAuthor.data\\BookAuthor.Data.csproj",
-        "packagesPath": "C:\\Users\\johurtado\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\johurtado\\OneDrive - ENDAVA\\Documents\\Jose Hurtado\\projects\\C#_react\\BookAuthor\\BookAuthor.data\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\BookAuthor.Data.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\johurtado\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\johurtado\\OneDrive - ENDAVA\\Documents\\Jose Hurtado\\projects\\C#_react\\BookAuthor\\BookAuthor.models\\BookAuthor.Models.csproj": {
-                "projectPath": "C:\\Users\\johurtado\\OneDrive - ENDAVA\\Documents\\Jose Hurtado\\projects\\C#_react\\BookAuthor\\BookAuthor.models\\BookAuthor.Models.csproj"
+              "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\BookAuthor.Models.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\BookAuthor.Models.csproj"
               }
             }
           }
@@ -89,17 +89,17 @@
         }
       }
     },
-    "C:\\Users\\johurtado\\OneDrive - ENDAVA\\Documents\\Jose Hurtado\\projects\\C#_react\\BookAuthor\\BookAuthor.models\\BookAuthor.Models.csproj": {
+    "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\BookAuthor.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\johurtado\\OneDrive - ENDAVA\\Documents\\Jose Hurtado\\projects\\C#_react\\BookAuthor\\BookAuthor.models\\BookAuthor.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\BookAuthor.Models.csproj",
         "projectName": "BookAuthor.Models",
-        "projectPath": "C:\\Users\\johurtado\\OneDrive - ENDAVA\\Documents\\Jose Hurtado\\projects\\C#_react\\BookAuthor\\BookAuthor.models\\BookAuthor.Models.csproj",
-        "packagesPath": "C:\\Users\\johurtado\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\johurtado\\OneDrive - ENDAVA\\Documents\\Jose Hurtado\\projects\\C#_react\\BookAuthor\\BookAuthor.models\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\BookAuthor.Models.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\BookAuthor\\BookAuthor.models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\johurtado\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

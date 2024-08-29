@@ -22,4 +22,9 @@
     <ProjectReference Include="..\BookAuthor.models\BookAuthor.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Services\IService\" />
+  </ItemGroup>
+
 </Project>

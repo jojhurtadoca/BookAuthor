@@ -10,19 +10,19 @@
             </summary>
             <returns>Book created.</returns>
         </member>
-        <member name="M:BookAuthor.Controllers.BookController.GetBook(System.Int32)">
+        <member name="M:BookAuthor.Controllers.BookController.GetBook(System.Guid)">
             <summary>
             Get book by id
             </summary>
             <returns>Book by id.</returns>
         </member>
-        <member name="M:BookAuthor.Controllers.BookController.UpdateBook(System.Int32,BookAuthor.Models.Dto.UpdateBookDTO)">
+        <member name="M:BookAuthor.Controllers.BookController.UpdateBook(BookAuthor.Models.Dto.UpdateBookDTO)">
             <summary>
             Updates book by id and DTO
             </summary>
             <returns>Json Result.</returns>
         </member>
-        <member name="M:BookAuthor.Controllers.BookController.DeleteBook(System.Int32)">
+        <member name="M:BookAuthor.Controllers.BookController.DeleteBook(System.Guid)">
             <summary>
             Deletes a book by id
             </summary>
@@ -34,13 +34,13 @@
             </summary>
             <returns>List of books.</returns>
         </member>
-        <member name="M:BookAuthor.Controllers.BookController.GetBoooksByAuthor(System.Int32,System.Int32,System.Int32,System.Boolean)">
+        <member name="M:BookAuthor.Controllers.BookController.GetBoooksByAuthor(System.Guid,System.Int32,System.Int32,System.Boolean)">
             <summary>
             Filters books by author
             </summary>
             <returns>The list of the books filtered by Author.</returns>
         </member>
-        <member name="M:BookAuthor.Controllers.BookController.GetBoooksByGenre(System.Int32,System.Int32,System.Int32,System.Boolean)">
+        <member name="M:BookAuthor.Controllers.BookController.GetBoooksByGenre(System.Guid,System.Int32,System.Int32,System.Boolean)">
             <summary>
             Filters books by Genre
             </summary>

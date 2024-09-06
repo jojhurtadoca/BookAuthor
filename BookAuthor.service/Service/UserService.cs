@@ -3,6 +3,7 @@ using BookAuthor.Data.Data.Repository.IRepository;
 using BookAuthor.Models.Dto;
 using BookAuthor.Models.Exceptions;
 using BookAuthor.Models.models;
+using BookAuthor.Models.Models;
 using BookAuthor.Service.Service.IService;
 
 namespace BookAuthor.Service.Service
@@ -11,13 +12,15 @@ namespace BookAuthor.Service.Service
     {
         private readonly IRoleRepository _roleRepository;
         private readonly IUserRepository _userRepository;
+        private readonly IUserRoleRepository _userRoleRepository;
         private readonly IMapper _mapper;
 
-        public UserService(IRoleRepository roleRepository, IUserRepository userRepository, IMapper mapper)
+        public UserService(IRoleRepository roleRepository, IUserRepository userRepository, IMapper mapper, IUserRoleRepository userRoleRepository)
         {
             _roleRepository = roleRepository;
             _userRepository = userRepository;
             _mapper = mapper;
+            _userRoleRepository = userRoleRepository;
         }
 
         public GetUserDTO mapperUser(User user)
@@ -41,11 +44,16 @@ namespace BookAuthor.Service.Service
                 throw new ConflictException("Username is not available");
             }
 
-            var r = await _roleRepository.GetById(entity.Role);
+            var roles = entity.Roles.ToHashSet();
+            var rolesData = new HashSet<Role>();
+            foreach (var role in roles) {
+                var roleFound = await _roleRepository.GetById(role);
 
-            if (r == null)
-            {
-                throw new NotFoundException("Role not found");
+                if (roleFound == null)
+                {
+                    throw new NotFoundException("Role with ID " + role + " not found");
+                }
+                rolesData.Add(roleFound);
             }
 
             var newUser = new User
@@ -54,10 +62,23 @@ namespace BookAuthor.Service.Service
                 UserName = entity.Username,
                 Password = entity.Password,
                 Name = entity.Name,
-                Role = r,
             };
 
             var userCreated = await _userRepository.Add(newUser);
+
+            // We need to create the relationship between user and roles
+            foreach (var role in rolesData)
+            {
+
+                var newUserRole = new UserRole
+                {
+                    UserId = newUser.Id,
+                    User = newUser,
+                    RoleId = role.Id,
+                    Role = role,
+                };
+                await _userRoleRepository.Add(newUserRole);
+            }
             return mapperUser(userCreated);
         }
 
@@ -121,22 +142,48 @@ namespace BookAuthor.Service.Service
                 }
             }
 
-
-            var r = await _roleRepository.GetById(entity.Role);
-
-            if (r == null)
+            var roles = entity.Roles.ToHashSet();
+            var rolesData = new HashSet<Role>();
+            foreach (var role in roles)
             {
-                throw new NotFoundException("Role not found");
+                var roleFound = await _roleRepository.GetById(role);
+
+                if (roleFound == null)
+                {
+                    throw new NotFoundException("Role with ID " + role + " not found");
+                }
+                rolesData.Add(roleFound);
             }
 
             currentUser.UserName = string.IsNullOrEmpty(entity.UserName) ? entity.UserName : currentUser.UserName;
             currentUser.Email = string.IsNullOrEmpty(entity.Email) ? entity.Email : currentUser.Email;
             currentUser.Password = string.IsNullOrEmpty(entity.Password) ? entity.Password : currentUser.Password;
             currentUser.Name = string.IsNullOrEmpty(entity.Name) ? entity.Name : currentUser.Name;
-            currentUser.Role = r != null ? r : currentUser.Role;
             currentUser.UpdatedAt = DateTime.Now;
 
             var updatedUser = await _userRepository.Update(currentUser);
+
+            // We need to update the relationship between user and roles
+            var userRoles = await _userRoleRepository.GetUserRolesByUserId(entity.Id);
+            foreach (var role in rolesData)
+            {
+                // We need to find if the role has been added before
+                var userRoleAdded = userRoles.Where(x => x.RoleId == role.Id).First();
+                if (userRoleAdded == null)
+                {
+                    // This means, this role has not been added before, so we can create the entity, if 
+                    // the role has been added, we don't have to do nothing
+                    var newUserRole = new UserRole
+                    {
+                        UserId = updatedUser.Id,
+                        User = updatedUser,
+                        RoleId = role.Id,
+                        Role = role,
+                    };
+
+                    await _userRoleRepository.Add(newUserRole);
+                }
+            }
 
             return mapperUser(updatedUser);
         }

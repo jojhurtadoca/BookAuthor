@@ -14,6 +14,6 @@ namespace BookAuthor.Models.Dto
         [EmailAddress]
         public string Email { get; set; }
         [Required(ErrorMessage = "Roles are required")]
-        public Guid Role { get; set; }
+        public Guid[] Roles { get; set; }
     }
 }

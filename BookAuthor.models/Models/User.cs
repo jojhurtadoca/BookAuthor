@@ -13,8 +13,6 @@ namespace BookAuthor.Models.models
         public string Password { get; set; }
         [Required]
         public string Name { get; set; }
-
-        public Guid RoleId { get; set; } // Foreign key property
-        public Role Role { get; set; }   // Navigation property
+        public ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
     }
 }

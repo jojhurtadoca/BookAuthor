@@ -21,6 +21,7 @@ namespace BookManagement.data.Data
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<RolePermission> RolePermissions { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -38,13 +39,21 @@ namespace BookManagement.data.Data
                 new Genre { Id = Guid.NewGuid(), Name = "Medieval" }
             );
 
-            modelBuilder.Entity<User>()
-               .HasOne(u => u.Role)
-               .WithMany(r => r.Users)
-               .HasForeignKey(u => u.RoleId);
+            modelBuilder.Entity<UserRole>()
+                .HasKey(rp => new { rp.RoleId, rp.UserId });
+
+            modelBuilder.Entity<UserRole>()
+                .HasOne(rp => rp.Role)
+                .WithMany(r => r.UserRoles)
+                .HasForeignKey(rp => rp.RoleId);
+
+            modelBuilder.Entity<UserRole>()
+                .HasOne(rp => rp.User)
+                .WithMany(r => r.UserRoles)
+                .HasForeignKey(rp => rp.UserId);
 
             modelBuilder.Entity<RolePermission>()
-                .HasKey(rp => new { rp.RoleId, rp.PermissionId }); // Composite key
+                .HasKey(rp => new { rp.RoleId, rp.PermissionId });
 
             modelBuilder.Entity<RolePermission>()
                 .HasOne(rp => rp.Role)
@@ -71,9 +80,9 @@ namespace BookManagement.data.Data
             var user3Id = Guid.NewGuid();
 
             modelBuilder.Entity<User>().HasData(
-                new User { Id = user1Id, Name = "User1", Email = "email@email.com", Password = "Password", UserName = "username1", RoleId = roleSuperAdminId },
-                new User { Id = user2Id, Name = "User2", Email = "email2@email.com", Password = "Password2", UserName = "username2", RoleId = roleAdminId },
-                new User { Id = user3Id, Name = "User3", Email = "email3@email.com", Password = "Password3", UserName = "username3", RoleId = roleUserId }
+                new User { Id = user1Id, Name = "User1", Email = "email@email.com", Password = "Password", UserName = "username1" },
+                new User { Id = user2Id, Name = "User2", Email = "email2@email.com", Password = "Password2", UserName = "username2" },
+                new User { Id = user3Id, Name = "User3", Email = "email3@email.com", Password = "Password3", UserName = "username3" }
             );
 
             var permissionCreateId = Guid.NewGuid();
@@ -97,6 +106,15 @@ namespace BookManagement.data.Data
                 new RolePermission { Id = Guid.NewGuid(), RoleId = roleAdminId, PermissionId = permissionUpdateId },
                 new RolePermission { Id = Guid.NewGuid(), RoleId = roleAdminId, PermissionId = permissionViewId },
                 new RolePermission { Id = Guid.NewGuid(), RoleId = roleUserId, PermissionId = permissionViewId }
+            );
+
+            modelBuilder.Entity<UserRole>().HasData(
+                new UserRole { Id = Guid.NewGuid(), RoleId = roleSuperAdminId, UserId = permissionCreateId },
+                new UserRole { Id = Guid.NewGuid(), RoleId = roleAdminId, UserId = permissionUpdateId },
+                new UserRole { Id = Guid.NewGuid(), RoleId = roleUserId, UserId = permissionDeleteId },
+                new UserRole { Id = Guid.NewGuid(), RoleId = roleAdminId, UserId = permissionViewId },
+                new UserRole { Id = Guid.NewGuid(), RoleId = roleUserId, UserId = permissionCreateId },
+                new UserRole { Id = Guid.NewGuid(), RoleId = roleUserId, UserId = permissionUpdateId }
             );
         }
     }

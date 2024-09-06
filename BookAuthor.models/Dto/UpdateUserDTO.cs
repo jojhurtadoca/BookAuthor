@@ -14,6 +14,6 @@ namespace BookAuthor.Models.Dto
 
         public DateTime UpdatedAt { get; set; }
 
-        public Guid Role { get; set; }
+        public Guid[] Roles { get; set; }
     }
 }

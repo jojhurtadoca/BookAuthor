@@ -19,7 +19,7 @@ namespace BookManagement.data.Data.Repository
         public async Task<List<User>> GetUserWithRoles()
         {
             return _dbContext.Set<User>()
-                .Include(d => d.Role)
+                .Include(d => d.UserRoles)
                 .ToList();
         }
 
